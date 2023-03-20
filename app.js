@@ -15,4 +15,9 @@ function randomSquare() {
   randomSquare.classList.add("mole");
 }
 
-randomSquare();
+function moveMole() {
+  let timerId = null;
+  timerId = setInterval(randomSquare, 500);
+}
+
+moveMole();
